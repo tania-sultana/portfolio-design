@@ -10,7 +10,7 @@
 .col-10 { width: 83.33%; }
 .col-11 { width: 91.67%; }
 .col-12 { width: 100%; }
-
+/* navbar start */
 .nav-logo{
     text-align: left;
 }
@@ -30,3 +30,29 @@
     margin: 30px 5px;
     background-color: transparent;
 }
+/* end navbar */
+
+/* profile design start */
+.profile .top-weather-icon{
+    right:120px;
+    top: 20px;
+    width: 150px;
+    border-radius: 50%;
+    transition: width 2s, transform 2s;
+}
+.profile .top-weather-icon:hover{
+    width: 180px;
+    top: 10px;
+}
+
+.profile-description p{
+    color: gray;
+     margin: 0 auto ;
+    text-align: center;
+    width: 65%;
+}
+/* profile design end */
+
+/* about design start */
+
+/* about end */

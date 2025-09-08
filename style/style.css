@@ -10,10 +10,20 @@ h1{
     text-align: center;  
 }
 
+h2{
+    font-size: 24px;
+    text-align: center;
+}
+
 a{
     text-decoration: none;
     font-size: 20px;
     color: white;
+}
+
+p{
+    font-size: 20px;
+    justify-content: center;
 }
 
 [class*="col-"]{
@@ -25,7 +35,7 @@ a{
 [class*="col-"]{
     width: 100%;
 }
-
+/* navbar design start here */
 .navbar{
     background-color: teal;
     padding: 1% 5%;
@@ -65,4 +75,58 @@ a{
     display: table;
     clear: both;
 }
+/* end navbar */
 
+/* profile design  start */
+
+.profile{
+    padding: 100px 10px;
+    position: relative;
+    text-align: center;
+    background-color: #ccf2f4;
+    /* background-color: #f0fafa; */
+
+}
+
+.profile .top-weather-icon{
+    position: absolute;
+    right:70px;
+    top: 20px;
+    border-radius: 50%;
+    transition: transform 2s;
+}
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+.profile-description h1{
+    font-family: 'Satisfy', cursive; 
+    font-size: 48px;
+    margin: 55px;  
+}
+.profile-description p{
+    color: gray;
+     margin: 0 auto 20px auto;
+    text-align: center;
+    width: 90%;
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* profile design end */
+
+/* about design start */
+.about{
+    background-color:#66cccc;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.about::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* about end */
