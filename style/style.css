@@ -178,17 +178,23 @@ p{
 /* .professional-experience{
     padding: 2% 3%;
 } */
+ .professional-experience{
+    background-color: #66cccc;
+ }
 
 .professional-experience .card{
-    background-color: #66cccc;
+    /* background-color: #66cccc; */
+    color: white;
+    box-shadow: 0 4px 8px black;
     border-radius: 5px;
     padding: 10px;
     height: 670px;
     transition: 1s;
 }
 .professional-experience .card:hover{
-    box-shadow: 0 4px 8px black;
+    /* box-shadow: 0 4px 8px black; */
     background-color: #B3E5E5;
+    color: black;
     
 }
 .work-experience .card .card-icon{
