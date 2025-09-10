@@ -50,9 +50,34 @@
      margin: 0 auto ;
     text-align: center;
     width: 65%;
+    text-align: cen;
 }
 /* profile design end */
 
 /* about design start */
+.about-image{
+    margin-top: 40px;
+}
 
+.about-image img{
+    height: 270px;
+    width: 250px;
+}
+.about-description p{
+    text-align: left;
+}
 /* about end */
+
+/*  professional experience start  */
+
+    /*  professional experience start  */
+
+     /* achievement start */
+    .achievement{
+        padding-right: 50px;
+    }
+    .contact button{
+        
+         width: 150px;
+    }
+     /* achievement end */

@@ -26,12 +26,19 @@ p{
     justify-content: center;
 }
 
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+
 [class*="col-"]{
     float: left;
     padding: 10px;
 }
 
-/* for mobile */
+/* for mobile  */
 [class*="col-"]{
     width: 100%;
 }
@@ -119,14 +126,301 @@ p{
 /* about design start */
 .about{
     background-color:#66cccc;
-    padding: 1% 7%;
+    padding: 3% 7%;
     color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+.about-image img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;  
+  }
+  .about p{
+    line-height: 30px;
+    text-align: center;
+  }
+  .about a{
+    font-size: 16px; 
+  }
+.cv-btn{
+     background-color: #052d2f;
+    color: white;
+    border:none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    width: 115px;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 10px;  
+}
+  .about-hr{
+    margin: 10px 0;
+  }
+  .about-description p a button{
+    width: 115px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
 .about::after{
     content: '';
     display: table;
     clear: both;
 }
 /* about end */
+
+   /*  professional experience start 
+    */
+
+/* .professional-experience{
+    padding: 2% 3%;
+} */
+
+.professional-experience .card{
+    background-color: #66cccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 670px;
+    transition: 1s;
+}
+.professional-experience .card:hover{
+    box-shadow: 0 4px 8px black;
+    background-color: #B3E5E5;
+    
+}
+.work-experience .card .card-icon{
+    text-align: center;
+}
+.work-experience .card-icon img{
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+.work-experience .card-title h2{
+    background-color: #006666;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.work-experience .card-desc ol{
+    padding: 20px;
+    margin: 10px;
+    
+}
+.work-experience .card-desc ol li{
+   
+    font-size: 16px;
+    margin: 10px 0;
+      
+}
+.education .card .card-icon{
+    text-align: center;
+}
+.education .card-icon img{
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+.education .card-title h2{
+    background-color: #006666;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 10px; 
+}
+
+.education .card-desc ol{
+    padding: 20px;
+    margin: 10px;    
+}
+.education .card-desc ol li{
+   
+    font-size: 16px;
+    margin: 10px 0;    
+}
+.skills .card .card-icon{
+    text-align: center;
+}
+.skills .card-icon img{
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+}
+.skills .card-title h2{
+    background-color: #006666;
+    text-align: center;
+    color: white;
+    margin: 0 10px;
+    padding: 10px;    
+}
+.skills .card-desc ol{
+    padding: 10px;
+}
+.skills .card-desc ol li{   
+    font-size: 16px;
+    margin: 30px 0;      
+}
+
+.skills-container{
+    padding: 25px;
+}
+.skills-container li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 35px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    background-color: #B3E2E2;
+    width: 100%;
+    height: 20px;
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 1000px;
+}
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    background-color: #006666;
+    width: 0;
+    height: 20px;
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+
+.skills-container li.html::after{
+            animation-name: html;
+        }
+        @keyframes html{
+            to{
+                width: 70%;
+            }
+        }
+        .skills-container li.css::after{
+            animation-name: css;
+        }
+        @keyframes css{
+            to{
+                width: 90%;
+                         
+            }
+        }
+        .skills-container li.js::after{
+            animation-name: js;
+        }
+        @keyframes js{
+            to{
+                width: 90%;
+                         
+            }
+        }
+        .skills-container li.node::after{
+            animation-name: node;
+        }
+        @keyframes node{
+            to{
+                width: 50%;
+                         
+            }
+        }
+
+
+        .skills-container li.bootstrap::after{
+            animation-name: bootstrap;
+        }
+        @keyframes bootstrap{
+            to{
+                width: 30%;
+            }
+        }
+        .skills-container li.git::after{
+            animation-name: git;
+        }
+        @keyframes git{
+            to{
+                width: 80%;
+            }
+        }
+
+
+.professional-experience::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+    /*  professional experience end 
+     */
+
+     /* achievement start */
+    .achiuevement-contact{
+        padding: 1% 7%;
+        background-color: #66cccc;
+        color: white;
+    }
+    .contact{
+        text-align: center;
+    }
+    .contact input, textarea{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        resize: none;
+    }
+    .contact button{
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #052d2f;
+         color: white;
+         margin: 10px;
+         width: 100px;
+    }
+    .contact-link{
+        text-align: center;
+    }
+    .media-button .btn{
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 32px;
+        padding: 5px;
+        margin: 10px;
+        width: 50px;
+    }
+    .media-button .btn:hover{
+       background-color: #B3E2E2 ;
+    }
+    .achiuevement-contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+     /* achievement end */

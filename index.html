@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <!-- bootstrap link -->
      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"> -->
+      <!-- font awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -50,16 +52,16 @@
     <!-- profile end here -->
 
     <!-- about section start -->
-<div class="about" id="about">
+    <div class="about" id="about">
     <h2>About Me</h2>
     <hr class="dotted-hr">
     
-        <!-- <div class="about-image col-md-6 col-12"> -->
-        <img class="about-image col-md-6 col-12" src="img/anni.jpg" alt="anni">
-        <!-- </div>   -->
-        <div class="about-description col-md-6 col-12">
-            <p>I am a Laravel PHP backend developer specializing in building scalable web applications, RESTful APIs, and efficient database-driven solutions.</p>
+        <div class="about-image col-6">
+            <img src="img/anni.jpg" alt="">
+        </div>
 
+        <div class="about-description col-6">
+            <p>I am a Laravel PHP backend developer specializing in building scalable web applications, RESTful APIs, and efficient database-driven solutions.</p>
             <p>As a Laravel backend developer, I create secure, high-performance applications using PHP, MySQL, and modern frameworks, ensuring clean code, API integration, and maintainable architecture.</p>
 
             <hr class="about-hr">
@@ -79,8 +81,158 @@
                 <a href="cv.pdf" target="blank" download=""><button class="cv-btn">Download CV</button></a>
             </p>
         </div>
-   
+    </div>
+
+    <!-- professional experience start -->
+    <div class="professional-experience">
+        <div class="work-experience col-4">
+           <div class="card">
+                <div class="card-icon">
+                    <img src="img/work.png" alt="work icon">
+                </div>
+
+                <div class="card-title">
+                    <h2>Work Experience</h2>
+                </div>
+
+                <div class="card-desc">
+                <ol>
+                        <li>
+                            <strong>PHP Developer</strong><br>
+                            01/08/2025 Present <br>
+                            CSN Bangladesh Limited <br>
+                            Shekherteck, Mohammadpur, Dhaka
+
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>E-commerce Project</strong><br>
+                            Grocery shop <br>                    
+                            PHP | HTML | CSS | JavaScript <br>
+                            Built grocery web app with cart, orders,
+                            admin panel, search, payments, authentication,
+                            and real-time updates 
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>Calculator</strong><br>
+                            PHP | JavaScript <br>
+                            Developed Laravel calculator app with basic 
+                            arithmetic functions, user-friendly interface, 
+                            and accurate real-time calculations.
+                        </li>
+                        
+                    </ol>
+                </div>
+           </div>
+        </div>
+            
+        <div class="education col-4">
+            <div class="card">
+                <div class="card-icon">
+                    <img src="img/edu.png" alt="work icon">
+                </div>
+
+                <div class="card-title">
+                    <h2>Education & Traning</h2>
+                </div>
+
+                <div class="card-desc">
+                <ol>
+                        <li>
+                            <strong>B.Sc in Computer Science & Engineering</strong><br>
+                            2018-2019 <br>
+                            Pabna University of Science & Technology <br>
+                            Pabna, Dhaka <br>
+                            Result: 3.42/4
+
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>HSC</strong><br>
+                            2017 <br>                    
+                            Durgapur Degree College <br>
+                            Durgapur, Rajshahi <br>
+                            Result: 4.33/5
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>SSC</strong><br>
+                            2015 <br>
+                            Tetulia High School <br>
+                            Puthia, Rajshahi <br>
+                            Result: 5.00/5
+                        </li>
+                        
+                    </ol>
+                </div>
+           </div>
+        </div>
+
+         <div class="skills col-4">
+           <div class="card">
+                <div class="card-icon">
+                    <img src="img/skills.png" alt="work icon">
+                </div>
+
+                <div class="card-title">
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="card-desc">
+                    <div class="skills-container">
+                        <ul>
+                            <li class="html">HTML</li>
+                            <li class="css">CSS</li>
+                            <li class="js">JavaScript</li>
+                            <li class="node">Node.js</li>
+                            <li class="bootstrap">Bootstrap</li>                        
+                            <li class="git">GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <!-- professional experience start -->
+
+    <!-- achievement section start -->
+<div class="achiuevement-contact">
+    <div class="achievement col-4">
+        <h2>ACHIEVEMENT</h2>
+        <hr class="dotted-hr">
+        <p>1. Strong foundation in algorithms, data structures, and software development.</p>
+        <p>2. Experienced in building scalable web applications and RESTful APIs.</p>
+        <p>3. Skilled in problem-solving, teamwork, and delivering efficient technical solutions.</p>
+    </div>
+
+    <div class="contact col-4">
+        <h2>CONTACT ME</h2>
+        <hr class="dotted-hr">
+        <form action="mailto:taniasultanaanni@gmail.com" method="post" enctype="text/plain">
+            <p><input type="text" placeholder="Your name" name="name"></p>
+            <p><input type="email" placeholder="Your email" name="email"></p>
+           <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message Here"></textarea>
+           <button type="submit">SEND</button>
+           <button type="submit">RESET</button>
+
+        </form>
+    </div>
+
+    <div class="contact-link col-4">
+        <h2>More ways to Contact</h2>
+        <hr class="dotted-hr">
+        <div class="media-button">
+            <button class="btn" onclick="window.open('https://www.youtube.com/watch?v=8p44gbBdpGk')" class="request-callback"><i class="fa fa-youtube-play" style="color: #c4302b;" ></i></button>
+
+            <button class="btn" onclick="window.open('https://www.youtube.com/watch?v=8p44gbBdpGk')" class="request-callback"><i class="fa fa-linkedin" style="color: #c4302b;" ></i></button>
+            <button class="btn" onclick="window.open('https://www.youtube.com/watch?v=8p44gbBdpGk')" class="request-callback"><i class="fa fa-instagram" style="color: #c4302b;" ></i></button>
+            <button class="btn" onclick="window.open('https://www.youtube.com/watch?v=8p44gbBdpGk')" class="request-callback"><i class="fa fa-twitter" style="color: #c4302b;" ></i></button>
+        </div>
+
+    </div>
 </div>
-    <!-- about end -->
+    <!-- achievement section end -->
+
 </body>
 </html>
